@@ -1,0 +1,18 @@
+[
+    {
+        "model_name": "sentence-transformers/all-mpnet-base-v2",
+        "output_filename": "top_5_clusters_mpnet.xlsx"
+    },
+    {
+        "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+        "output_filename": "top_5_clusters_MiniLM.xlsx"
+    },
+    {
+        "model_name": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+        "output_filename": "top_5_clusters_PMiniLM.xlsx"
+    },
+    {
+        "model_name": "bert-base-uncased",
+        "output_filename": "top_5_clusters_bert_flair.xlsx"
+    }
+]
