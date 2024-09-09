@@ -1,0 +1,7 @@
+numpy
+pandas
+datasets
+flair
+transformers
+torch
+scikit-learn
