@@ -10,13 +10,13 @@ Contains six Python files for various tasks. Each task focuses on clustering or 
 - **`set1_data_clustering (iteration1).py`**  
   - **Description:** Performs clustering of relations of Set 1 Jio news summaries dataset. Assigns clusters to relations by calculating the cosine similarity between the relation embedding and the mean embedding of each pre-defined cluster.
   - **Input:** Pre-defined clusters and Set 1 Jio news summaries data (from the `data/` folder).  
-  - **Output:** Cluster assignments for Set 1 relations and updated relation clusters are saved (in the `output/` folder).  
+  - **Output:** Cluster assignments for Set 1 relations and updated relation clusters are saved (in the `data/output/` folder).  
   - **Model:** Uses the `paraphrase-MiniLM-L6-v2` embedding model from the `transformers` library.
 
 - **`gpt4_relations_clustering (iteration2).py`**  
   - **Description:** Assigns top 5 clusters to GPT-generated relations based on cosine similarities between relation embeddings and the mean embeddings of the original clusters.  
   - **Input:** Updated cluster results from iteration 1 and GPT-generated relations from the `data/` folder.  
-  - **Output:** Cluster assignments for GPT-generated relations are saved in five separate Excel files in the `output/` folder for results corresponding different embedding models.  
+  - **Output:** Cluster assignments for GPT-generated relations are saved in five separate Excel files in the `data/output/` folder for results corresponding different embedding models.  
   - **Evaluation:** The cluster assignments for all five models are evaluated using functions from `evaluation_utils.py`.  
   - **Models:** Embedding models are specified in `models.json` (in the `configs/` folder).
 
@@ -34,7 +34,7 @@ Contains six Python files for various tasks. Each task focuses on clustering or 
 - **`set2_classification (iteration4).py`**  
   - **Description:** Uses a Random Forest classifier to predict the top 5 clusters for relations of Set 2 Jio news summaries dataset based on embeddings. The model is trained on embeddings from previous iterations.  
   - **Input:** Updated clusters from iteration 2  (using the `all-mpnet-base-v2` model) and Set 1 Jio news summaries data from the `data/` folder.  
-  - **Output:** Cluster assignments for Set 2 relations and updated clusters are saved in the `output/` folder.  
+  - **Output:** Cluster assignments for Set 2 relations and updated clusters are saved in the `data/output/` folder.  
   - **Model:** Uses `all-mpnet-base-v2` embedding model from `transformers`.
   - **Evaluation:** Evaluation is performed using functions from `evaluation_utils.py`.
 
@@ -48,7 +48,7 @@ Contains a preprocessing script for Set 2 data:
 
 - **`set2_data_preprocessing.py`**  
   - **Description:** Preprocesses Set 2 data to extract common samples from ground truth and LLM-predicted datasets.  
-  - **Output:** The common samples are saved in the `output/` folder.  
+  - **Output:** The common samples are saved in the `data/output/` folder.  
   - **Usage:** This file is required for the Set 2 relations clustering and classification tasks.
 
 ### 3. `utils` Folder
