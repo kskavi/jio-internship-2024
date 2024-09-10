@@ -1,6 +1,6 @@
 # Project Repository
 
-This repository contains code for creating clusters for relations, experimenting with different clustering approaches and embedding models. The process involves multiple iterations of clustering and classification, utilizing various models to achieve optimal results. It includes several tasks ranging from clustering relationships from private Jio news summaries datasets to classifying relations from the oublic CoNLL04 dataset. The repository is organized into several folders to structure the tasks, utilities, input data, output results, etc. Below is a detailed description of each folder and file in the repository.
+This repository contains code for creating clusters for relations, experimenting with different clustering approaches and embedding models. The process involves multiple iterations of clustering and classification, utilizing various models to achieve optimal results. It includes several tasks ranging from clustering relationships from private Jio news summaries datasets to classifying relations from the public CoNLL04 dataset. The repository is organized into several folders to structure the tasks, utilities, input data, output results, etc. Below is a detailed description of each folder and file in the repository.
 
 ## Repository Structure
 
